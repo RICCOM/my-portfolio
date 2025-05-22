@@ -1,25 +1,32 @@
-// src/components/Projects.jsx
-import React from 'react';
 
+import React from 'react';
+import senditImage from '../assets/sendit.jpg'; 
+import coffee254Image from'../assets/coffee254.jpg';
 const Projects = ({ theme }) => {
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'Built a full-stack e-commerce platform with React, Node.js, and MongoDB',
-      image: 'https://public.readdy.ai/ai/img_res/5fe56a859c78113c14357ce981963a0e.jpg',
-      tags: ['React', 'Node.js', 'MongoDB']
+      title: 'Courier Services Platform',
+      description: 'Built a full-stack Courier Services platform with React, Flask, and Postegresql',
+      image: {senditImage}, 
+      tags: ['React', 'Flask', 'Postgresql'],
+      liveUrl: 'https://sendit-fe-nine.vercel.app/',
+      githubUrl: 'https://github.com/RICCOM/SENDIT-FE'
     },
     {
-      title: 'AI Image Generator',
+      title: 'Swimmers Club Platform',
       description: 'Developed an AI-powered image generation tool using Python and TensorFlow',
       image: 'https://public.readdy.ai/ai/img_res/e88900d7cdfcbe330ef907829a3bd231.jpg',
-      tags: ['Python', 'TensorFlow', 'AWS']
+      tags: ['Python', 'TensorFlow', 'AWS'],
+      liveUrl: 'https://ai-image-generator-hazel-zeta.vercel.app/',
+      
     },
     {
-      title: 'Smart Home IoT Dashboard',
-      description: 'Created a real-time IoT dashboard for smart home device management',
-      image: 'https://public.readdy.ai/ai/img_res/63221ceea6777c8221b0055038a89203.jpg',
-      tags: ['Vue.js', 'WebSocket', 'Node.js']
+      title: 'Coffee Restaurant Shop',
+      description: 'Created a Modern Coffee Restaurant Website',
+      image: {coffee254Image},
+      tags: ['Vue.js', 'WebSocket', 'Node.js'],
+      liveUrl: 'https://caffee254.vercel.app',
+     
     }
   ];
 
@@ -29,7 +36,13 @@ const Projects = ({ theme }) => {
         <h2 className={`text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 ${theme === 'light' ? 'text-gray-900' : 'text-gray-100'}`}>Featured Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
-            <div key={index} className={`group relative overflow-hidden rounded-xl shadow-lg ${theme === 'light' ? 'bg-white' : 'bg-gray-700'} transition-all duration-300 hover:shadow-2xl`}>
+            <a
+              key={index}
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group relative overflow-hidden rounded-xl shadow-lg ${theme === 'light' ? 'bg-white' : 'bg-gray-700'} transition-all duration-300 hover:shadow-2xl block`}
+            >
               <div className="aspect-w-16 aspect-h-12 overflow-hidden">
                 <img
                   src={project.image}
@@ -44,11 +57,7 @@ const Projects = ({ theme }) => {
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className={`px-2 py-1 rounded-full text-xs sm:text-sm ${
-                        theme === 'light'
-                          ? 'bg-blue-100 text-blue-600'
-                          : 'bg-blue-900/30 text-blue-300'
-                      }`}
+                      className={`px-2 py-1 rounded-full text-xs sm:text-sm ${theme === 'light' ? 'bg-blue-100 text-blue-600' : 'bg-blue-900/30 text-blue-300'}`}
                     >
                       {tag}
                     </span>
@@ -56,14 +65,26 @@ const Projects = ({ theme }) => {
                 </div>
               </div>
               <div className={`absolute top-2 right-2 sm:top-4 sm:right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-2`}>
-                <button className="!rounded-button whitespace-nowrap w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-white/90 hover:bg-white text-gray-700 rounded-full shadow-lg">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="!rounded-button whitespace-nowrap w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-white/90 hover:bg-white text-gray-700 rounded-full shadow-lg"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   <i className="fas fa-external-link-alt text-sm sm:text-base"></i>
-                </button>
-                <button className="!rounded-button whitespace-nowrap w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-white/90 hover:bg-white text-gray-700 rounded-full shadow-lg">
+                </a>
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="!rounded-button whitespace-nowrap w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-white/90 hover:bg-white text-gray-700 rounded-full shadow-lg"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   <i className="fab fa-github text-sm sm:text-base"></i>
-                </button>
+                </a>
               </div>
-            </div>
+            </a>
           ))}
         </div>
         <div className="text-center mt-8 sm:mt-12">

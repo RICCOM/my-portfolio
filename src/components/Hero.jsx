@@ -1,18 +1,18 @@
 // src/components/Hero.jsx
 import React from 'react';
-import profileImage from '../assets/eric-profile.jpg'; // Adjust as needed
+import profileImage from '../assets/munjuriEric-Profile.jpg'; // Adjust as needed
 
 const Hero = ({ setActiveSection }) => {
   return (
     <section className="pt-16 relative min-h-[600px] sm:min-h-[800px] overflow-hidden">
-      <div className="absolute inset-0 w-full h-full">
+      {/* <div className="absolute inset-0 w-full h-full">
         <img
-          src="https://public.readdy.ai/ai/img_res/2d217ca547b1b21b1c8dff5c3a654b76.jpg"
+          src={profileImage}
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 to-transparent"></div>
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-32 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
@@ -58,7 +58,7 @@ const Hero = ({ setActiveSection }) => {
                 alt="Munjuri Eric"
                 className="relative z-10 w-full max-w-md mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div> */}
             </div>
           </div>
         </div>

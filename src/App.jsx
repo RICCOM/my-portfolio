@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import MobileMenu from './components/MobileMenu';
 import Hero from './components/Hero';
@@ -27,7 +27,7 @@ const App = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, []);
+  }, );
 
   const handleSubmit = (e) => {
     e.preventDefault();
