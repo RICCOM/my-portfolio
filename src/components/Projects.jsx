@@ -87,11 +87,11 @@ const Projects = ({ theme }) => {
             </a>
           ))}
         </div>
-        <div className="text-center mt-8 sm:mt-12">
+        {/* <div className="text-center mt-8 sm:mt-12">
           <button className="!rounded-button whitespace-nowrap bg-blue-600 text-white px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg hover:bg-blue-700 transition-colors shadow-lg">
             View All Projects
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
