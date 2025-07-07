@@ -13,7 +13,7 @@ const Projects = ({ theme }) => {
       githubUrl: 'https://github.com/RICCOM/SENDIT-FE'
     },
     {
-      title: 'Swimmers Club Platform',
+      title: 'Ai Image Generator',
       description: 'Developed an AI-powered image generation tool using Python and TensorFlow',
       image: 'https://public.readdy.ai/ai/img_res/e88900d7cdfcbe330ef907829a3bd231.jpg',
       tags: ['Python', 'TensorFlow', 'AWS'],
