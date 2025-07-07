@@ -2,6 +2,8 @@
 import React from 'react';
 import senditImage from '../assets/sendit.jpg'; 
 import coffee254Image from'../assets/coffee254.jpg';
+import swimmersImage from '../assets/Swimmers.png';
+import partnerfarmsImage from '../assets/partnerfarms.png';
 const Projects = ({ theme }) => {
   const projects = [
     {
@@ -10,22 +12,30 @@ const Projects = ({ theme }) => {
       image: {senditImage}, 
       tags: ['React', 'Flask', 'Postgresql'],
       liveUrl: 'https://sendit-fe-nine.vercel.app/',
-      githubUrl: 'https://github.com/RICCOM/SENDIT-FE'
+      // githubUrl: 'https://github.com/RICCOM/SENDIT-FE'
     },
     {
-      title: 'Ai Image Generator',
-      description: 'Developed an AI-powered image generation tool using Python and TensorFlow',
-      image: 'https://public.readdy.ai/ai/img_res/e88900d7cdfcbe330ef907829a3bd231.jpg',
-      tags: ['Python', 'TensorFlow', 'AWS'],
-      liveUrl: 'https://ai-image-generator-hazel-zeta.vercel.app/',
+      title: 'Swimmers Club Platform',
+      description: 'Developed a Platform for Swimmers Club',
+      image: {swimmersImage},
+      tags: ['Javascript' , 'React'],
+      liveUrl: 'https://swimmers-club-project.vercel.app/',
       
     },
     {
       title: 'Coffee Restaurant Shop',
       description: 'Created a Modern Coffee Restaurant Website',
       image: {coffee254Image},
-      tags: ['React.js', 'WebSocket', 'Node.js'],
+      tags: ['React.js', 'Node.js'],
       liveUrl: 'https://caffee254.vercel.app',
+     
+    },
+    {
+      title: 'Livestock Investment Platform',
+      description: 'Developing a Universal Livestock Investment Platform',
+      image: {partnerfarmsImage},
+      tags: ['React.js', 'Flask', 'Node.js'],
+      liveUrl: 'https://partnerfarms.vercel.app/',
      
     }
   ];
