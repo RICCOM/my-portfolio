@@ -24,7 +24,7 @@ const Projects = ({ theme }) => {
       title: 'Coffee Restaurant Shop',
       description: 'Created a Modern Coffee Restaurant Website',
       image: {coffee254Image},
-      tags: ['Vue.js', 'WebSocket', 'Node.js'],
+      tags: ['React.js', 'WebSocket', 'Node.js'],
       liveUrl: 'https://caffee254.vercel.app',
      
     }
