@@ -63,7 +63,7 @@ const About = ({ theme = 'light' }) => {
                 theme === 'light' ? 'text-gray-900' : 'text-white'
               }`}
             >
-              Hi, I'm Munjuri Eric
+              Hi, I am Munjuri Eric
               <span className="text-blue-600 dark:text-blue-400"> — Full Stack Developer</span>
             </h3>
 
@@ -73,7 +73,7 @@ const About = ({ theme = 'light' }) => {
               }`}
             >
               I craft modern, scalable web applications that solve real problems and deliver real value. 
-              From Nairobi startups to global clients, I turn ideas into fast, reliable, user-friendly products.
+              I turn ideas into fast, reliable, user-friendly products.
             </p>
 
             <p
@@ -81,7 +81,7 @@ const About = ({ theme = 'light' }) => {
                 theme === 'light' ? 'text-gray-700' : 'text-gray-300'
               }`}
             >
-              I enjoy the full stack journey — clean architecture, performant code, intuitive UX, 
+              I enjoy the full stack journey; clean architecture, performant code, intuitive UX, 
               and staying current with tools that make building faster and more enjoyable.
             </p>
 
@@ -91,18 +91,18 @@ const About = ({ theme = 'light' }) => {
                 theme === 'light' ? 'text-gray-700' : 'text-gray-300'
               }`}
             >
-              <li className="flex items-center gap-4">
+              {/* <li className="flex items-center gap-4">
                 <span className="text-2xl text-blue-500">⚡</span>
                 <span>MERN / Next.js specialist</span>
               </li>
               <li className="flex items-center gap-4">
                 <span className="text-2xl text-blue-500">🌍</span>
-                <span>Building for local impact & global reach</span>
+                <span>Building for local impact </span>
               </li>
               <li className="flex items-center gap-4">
                 <span className="text-2xl text-blue-500">🚀</span>
                 <span>Focused on clean code, speed & great UX</span>
-              </li>
+              </li> */}
             </ul>
 
             <div className="pt-6">
@@ -118,7 +118,7 @@ const About = ({ theme = 'light' }) => {
                   }
                 `}
               >
-                Let's create something great together →
+                Let us create something great together →
               </a>
             </div>
           </div>

@@ -131,7 +131,7 @@ import hotxnewsImage from '../assets/hotxnews.png';
 import mymechImage from '../assets/mymech.png';
 import senditImage from '../assets/sendit.jpg';
 import coffee254Image from '../assets/coffee254.jpg';
-import swimmersImage from '../assets/Swimmers.png';
+import agentmarketImage from '../assets/agentmarket.png';
 import partnerfarmsImage from '../assets/partnerfarms.png';
 
 const Projects = ({ theme }) => {
@@ -160,11 +160,11 @@ const Projects = ({ theme }) => {
       liveUrl: 'https://sendit-fe-nine.vercel.app/',
     },
     {
-      title: 'Swimmers Club Platform',
-      description: 'Developed a Platform for Swimmers Club',
-      image: swimmersImage,
-      tags: ['Javascript', 'React'],
-      liveUrl: 'https://swimmers-club-project.vercel.app/',
+      title: 'AI Assistant Platform',
+      description: 'Developed a Platform for AI Assistant with React and Flask, and PostgreSQL',
+      image: agentmarketImage,
+      tags: ['Javascript', 'React', 'Flask', 'PostgreSQL'],
+      liveUrl: 'https://agentmarket-red.vercel.app/',
     },
     {
       title: 'Coffee Restaurant Shop',

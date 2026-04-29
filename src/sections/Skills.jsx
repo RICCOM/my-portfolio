@@ -7,19 +7,20 @@ const Skills = ({ theme }) => {
       { name: 'JavaScript', level: 95 },
       { name: 'TypeScript', level: 90 },
       { name: 'Python', level: 85 },
-      { name: 'Java', level: 80 }
+      // { name: 'Java', level: 80 }
     ],
     frameworks: [
       { name: 'React', level: 95 },
       { name: 'Node.js', level: 90 },
-      { name: 'Vue.js', level: 85 },
-      { name: 'Django', level: 80 }
+      // { name: 'Vue.js', level: 85 },
+      // { name: 'Django', level: 80 }
+      { name: 'Flask', level: 85 }
     ],
     tools: [
       { name: 'Git', level: 95 },
-      { name: 'Docker', level: 85 },
-      { name: 'AWS', level: 80 },
-      { name: 'Kubernetes', level: 75 }
+      // { name: 'Docker', level: 85 },
+      // { name: 'AWS', level: 80 },
+      // { name: 'Kubernetes', level: 75 }
     ]
   };
 
@@ -40,23 +41,24 @@ const Skills = ({ theme }) => {
                           {skill.name === 'JavaScript' && <i className="fab fa-js text-3xl sm:text-4xl text-yellow-400"></i>}
                           {skill.name === 'TypeScript' && <i className="fab fa-js text-3xl sm:text-4xl text-blue-600"></i>}
                           {skill.name === 'Python' && <i className="fab fa-python text-3xl sm:text-4xl text-blue-500"></i>}
-                          {skill.name === 'Java' && <i className="fab fa-java text-3xl sm:text-4xl text-red-500"></i>}
+                          {/* {skill.name === 'Java' && <i className="fab fa-java text-3xl sm:text-4xl text-red-500"></i>} */}
                         </>
                       )}
                       {category === 'frameworks' && (
                         <>
                           {skill.name === 'React' && <i className="fab fa-react text-3xl sm:text-4xl text-blue-400"></i>}
                           {skill.name === 'Node.js' && <i className="fab fa-node-js text-3xl sm:text-4xl text-green-600"></i>}
-                          {skill.name === 'Vue.js' && <i className="fab fa-vuejs text-3xl sm:text-4xl text-green-500"></i>}
-                          {skill.name === 'Django' && <i className="fab fa-python text-3xl sm:text-4xl text-green-800"></i>}
+                          {/* {skill.name === 'Vue.js' && <i className="fab fa-vuejs text-3xl sm:text-4xl text-green-500"></i>}
+                          {skill.name === 'Django' && <i className="fab fa-python text-3xl sm:text-4xl text-green-800"></i>} */}
+                          {skill.name === 'Flask' && <i className="fab fa-python text-3xl sm:text-4xl text-green-800"></i>}
                         </>
                       )}
                       {category === 'tools' && (
                         <>
                           {skill.name === 'Git' && <i className="fab fa-git-alt text-3xl sm:text-4xl text-orange-600"></i>}
-                          {skill.name === 'Docker' && <i className="fab fa-docker text-3xl sm:text-4xl text-blue-600"></i>}
+                          {/* {skill.name === 'Docker' && <i className="fab fa-docker text-3xl sm:text-4xl text-blue-600"></i>}
                           {skill.name === 'AWS' && <i className="fab fa-aws text-3xl sm:text-4xl text-orange-400"></i>}
-                          {skill.name === 'Kubernetes' && <i className="fas fa-dharmachakra text-3xl sm:text-4xl text-blue-500"></i>}
+                          {skill.name === 'Kubernetes' && <i className="fas fa-dharmachakra text-3xl sm:text-4xl text-blue-500"></i>} */}
                         </>
                       )}
                     </div>
